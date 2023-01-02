@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest Search/LinearSearch"
+    "test": "jest Search/binary"
   },
   "author": "",
   "license": "ISC",
