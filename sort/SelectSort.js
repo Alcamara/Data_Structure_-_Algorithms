@@ -1,12 +1,21 @@
 
 
 const selectSort = (arr) =>{
-    for (let unSortArr = arr.length -1; unSortArr >= arr.length; unSortArr--) {
+    for (let unSortArr = arr.length -1; unSortArr > 0; unSortArr--) {
+
+        let largestNum = 0;
         
-        for (let index = 0; index < unSortArr; index++) {
-            const element = array[index];
+        for (let index = 0; index <= unSortArr; index++) {
+           
+            if (arr[index] > arr[largestNum]) {
+                
+                largestNum = index;
+
+            }
             
         }
+
+        swapElements(arr,unSortArr, largestNum);
         
     }
 
