@@ -1,23 +1,17 @@
 
 
-const  bubbleSort = (arr) => {
-
-    for (let unSortArr = arr.length -1 ; unSortArr > 0; unSortArr--) {
+const selectSort = (arr) =>{
+    for (let unSortArr = arr.length -1; unSortArr >= arr.length; unSortArr--) {
         
         for (let index = 0; index < unSortArr; index++) {
-            
-            if(arr[index] > arr[index + 1]){
-
-                swapElements(arr, index, index + 1);
-
-            }
+            const element = array[index];
             
         }
         
     }
 
+
     return arr
-    
 }
 
 function swapElements(arr,index1, index2){
@@ -29,5 +23,4 @@ function swapElements(arr,index1, index2){
 }
 
 
-module.exports = bubbleSort;
-
+module.exports = selectSort;
