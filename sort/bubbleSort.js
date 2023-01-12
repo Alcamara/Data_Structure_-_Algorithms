@@ -2,11 +2,11 @@
 
 const  bubbleSort = (arr) => {
 
-    for (let unSortArr = array.length; unSortArr > 0; unSortArr--) {
+    for (let unSortArr = arr.length -1 ; unSortArr > 0; unSortArr--) {
         
-        for (let index = 1; index < array.length; index++) {
+        for (let index = 1; index < arr.length; index++) {
             
-            if(arr[index] > arr[index - 1]){
+            if(arr[index] < arr[index - 1]){
 
                 swapElements(arr, index, index -1);
 
@@ -15,6 +15,8 @@ const  bubbleSort = (arr) => {
         }
         
     }
+
+    return arr;
     
 }
 
